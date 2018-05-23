@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ClienteServlet</servlet-name>
+        <servlet-class>web.ClienteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProdutoServlet</servlet-name>
+        <servlet-class>web.ProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MercadoriaServlet</servlet-name>
+        <servlet-class>web.MercadoriasServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FormularioServlet</servlet-name>
+        <servlet-class>web.FormularioServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClienteServlet</servlet-name>
+        <url-pattern>/cliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProdutoServlet</servlet-name>
+        <url-pattern>/produto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MercadoriaServlet</servlet-name>
+        <url-pattern>/mercadoria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FormularioServlet</servlet-name>
+        <url-pattern>/form</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
